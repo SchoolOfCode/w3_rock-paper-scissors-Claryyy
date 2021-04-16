@@ -1,41 +1,33 @@
-let playerMove = "scissors";
-let computerMove = "paper";
-console.log(playerMove)
-console.log(computerMove)
 
-if ((playerMove === "rock") && (computerMove === "rock")) {
-    console.log("It's a draw")
-// return draw
+function getWinner(player1, player2) {
+if ((player1 === "rock") && (player2 === "rock")) {
+    return `0`
 }
-else if ((playerMove === "rock") && (computerMove === "paper")) {
-    console.log("Computer wins")
-    // return computerWins
+else if ((player1 === "rock") && (player2 === "paper")) {
+    return `-1`
 }
-else if ((playerMove === "paper") && (computerMove === "rock")) {
-    console.log("Player wins")
-    // return playerWins
+else if ((player1 === "paper") && (player2 === "rock")) {
+    return `1`
 }      
-else if ((playerMove === "paper") && (computerMove === "paper")) {
-    console.log("It's a draw")
-    // return draw
+else if ((player1 === "paper") && (player2 === "paper")) {
+    return `0`
 }
-else if ((playerMove === "scissors") && (computerMove === "paper")) {
-    console.log("Player wins")
-    // return playerWins
+else if ((player1 === "scissors") && (player2 === "paper")) {
+    return `1`
 }
-else if ((playerMove === "paper") && (computerMove === "scissors")) {
-    console.log("Computer wins")
-    // return computerWins
+else if ((player1 === "paper") && (player2 === "scissors")) {
+    return `-1`
 }       
-else if ((playerMove === "scissors") && (computerMove === "scissors")) {
-    console.log("It's a draw")
-    // return draw
+else if ((player1 === "scissors") && (player2 === "scissors")) {
+    return `0`
 }
-else if ((playerMove === "scissors") && (computerMove === "rock")) {
-    console.log("Computer wins")
-    // return computerWins
+else if ((player1 === "scissors") && (player2 === "rock")) {
+    return `-1`
 }
-else if ((playerMove === "rock") && (computerMove === "scissors")) {
-    console.log("Player wins")
-    // return playerWins
+else if ((player1 === "rock") && (player2 === "scissors")) {
+    return `1`
 }  
+  }
+  
+  let result = getWinner("scissors", "scissors");
+  console.log(result)
