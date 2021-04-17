@@ -2,9 +2,7 @@
 // ## Task 5: Game Loop
 
 // Now that we have a fully functioning game, our next step is to have it run as many times as people would like to play without having to refresh the page.
-
 // Use a `while loop` and `confirm`.
-
 // This will be deemed as complete when a player can keep playing indefinitely and has the option to stop playing after every round.
 
 function playTheGame() {
