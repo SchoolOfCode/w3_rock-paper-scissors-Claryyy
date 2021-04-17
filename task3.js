@@ -9,7 +9,7 @@
 let playerMove = prompt("Please chose your move: rock, paper or scissors");
 console.log(playerMove)
 
-while (playerMove !== ("rock" || "paper" || "scissors") ) {
+while ((playerMove !== ("rock")) && (playerMove !== ("paper")) && (playerMove !== ("scissors"))) {
     playerMove = prompt("Invalid choice. Please select a valid move: rock, paper or scissors")
 }
 
@@ -43,5 +43,5 @@ function getWinner(player1, player2) {
     }  
       }
       
-      let result = getWinner("scissors", "scissors");
-      console.log(result)
+    let result = getWinner(playerMove, "scissors");
+    alert(result);  
