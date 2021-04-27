@@ -10,19 +10,21 @@
     <h1>Rock, Paper, Scissors</h1>
   </header>
   
+  <main>
   <section>
-    <!-- Refactor your application so that all interactions are through HTML elements 
-      in [index.html](index.html) rather than `confirm`, `alert` and `prompt`. 
-      Using the DOM allows our game to be event-driven, 
-      so you may want to remove the while loop and instead compute the winner when an event is fired.
-      
-      This will be deemed as complete when `confirm`, `alert` and `prompt` are no longer used, 
-      user interaction is handled with HTML elements, 
-      and all the information is displayed on the page. -->
       <div>
+        <form id="form">
+          <input placeholder="Enter username" type="text" name="username" id="username-input" required/>
+          <button class="submitButton" type="button" name="submit" value="submit" id="username-submit">Submit</button>
+        </form>
         <button class="startGameButton">Start Game</button>
       </div>
+  </section>
       
+  <section class="game">
+    <div class="user">
+      <p class="username"></p>
+    </div>
       <div class="score" id="score-container">
         <h2>Score</h2>
         <p class="roundsPlayed"></p>
@@ -31,7 +33,7 @@
         <p class="draws"></p>
       </div>
       
-      <div class="game" id="game-container">
+      <div class="choices" id="choices-container">
         <h2>Make your choice</h2>
         <button class="rockButton">Rock</button>
         <button class="paperButton">Paper</button>
@@ -41,13 +43,16 @@
       <div class="results" id="results-container">
         <p class="thisRoundResult"></p>
       </div>
-      
+  </section>
+
+  <section class="encore">
       <div class="play-again" id="play-again-container">
         <h2>Do you want to keep playing?</h2>
-        <button keepPlaying>Yes, play again</button>
-        <!-- <button stopPlaying>No, stop playing</button> -->
+        <button class="keepPlaying">Yes, play again</button>
+        <button class="stopPlaying">No, stop playing</button>
       </div>
     </section>
+    </main>
     
     <footer></footer>
     
