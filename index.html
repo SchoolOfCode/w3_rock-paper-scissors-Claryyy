@@ -1,9 +1,56 @@
 <!DOCTYPE html>
 <html lang="en-GB">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Rock, Paper, Scissors</title>
-  </head>
-  <body></body>
-</html>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+  <header>
+    <h1>Rock, Paper, Scissors</h1>
+  </header>
+  
+  <section>
+    <!-- Refactor your application so that all interactions are through HTML elements 
+      in [index.html](index.html) rather than `confirm`, `alert` and `prompt`. 
+      Using the DOM allows our game to be event-driven, 
+      so you may want to remove the while loop and instead compute the winner when an event is fired.
+      
+      This will be deemed as complete when `confirm`, `alert` and `prompt` are no longer used, 
+      user interaction is handled with HTML elements, 
+      and all the information is displayed on the page. -->
+      <div>
+        <button class="startGameButton">Start Game</button>
+      </div>
+      
+      <div class="score" id="score-container">
+        <h2>Score</h2>
+        <p class="roundsPlayed"></p>
+        <p class="wins"></p>
+        <p class="losses"></p>
+        <p class="draws"></p>
+      </div>
+      
+      <div class="game" id="game-container">
+        <h2>Make your choice</h2>
+        <button class="rockButton">Rock</button>
+        <button class="paperButton">Paper</button>
+        <button class="scissorsButton">Scissors</button>
+      </div>
+      
+      <div class="results" id="results-container">
+        <p class="thisRoundResult"></p>
+      </div>
+      
+      <div class="play-again" id="play-again-container">
+        <h2>Do you want to keep playing?</h2>
+        <button keepPlaying>Yes, play again</button>
+        <!-- <button stopPlaying>No, stop playing</button> -->
+      </div>
+    </section>
+    
+    <footer></footer>
+    
+    <script src="main.js" ></script>
+  </body>
+  </html>
