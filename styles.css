@@ -1,3 +1,15 @@
+/* Going for a retro game style */
+
+@font-face {
+    font-family: "tarrgetacadital";
+    src: url(font/tarrgetacadital.ttf);
+}
+
+@font-face {
+    font-family: "tarrgetplatital";
+    src: url(font/tarrgetplatital.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,12 +21,25 @@ body {
 }
 
 header {
-    background: white;
+    background: red;
     padding: 20px;
 }
 
 header > h1 {
     color: black;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: tarrgetplatital, Arial, Helvetica, sans-serif;
+    font-size: 5em;
+}
+
+.setup, .game, .encore {
+    margin: 20px auto;
+    border: 3px solid white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.badge {
+    background: none;
 }
